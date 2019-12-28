@@ -339,6 +339,7 @@ h6{
     margin-left: -25px;
     border-radius: 50px;
     background: url(../images/skynet.png) center center;
+    background-size: 100%;
 }
 
 /*------------------------ 2 Profile Section ------------------------*/
