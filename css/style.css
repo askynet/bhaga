@@ -162,9 +162,9 @@ p{
  }
 
 .little-text{
-    color: #989898;
     font-weight: 400;
     line-height: 18px;
+    font-size: 13px;
 }
 
 blockquote {
@@ -457,15 +457,16 @@ ul.profile-information li:first-child:before{
 }
 
 ul.profile-information li:first-child:after{
-    background: url(../images/glasses-w.png) no-repeat;
-    content: '';
+    content: "\f007";
     width: 30px;
     height: 10px;
     position: absolute;
     top: 0;
     left: 0;
-    margin: 16px -15px;
+    margin: -21px -8px;
     background-size: 27px 10px;
+    color: #fff;
+    font-size: 20px;
 }
 
 .profile .site-btn{
@@ -473,7 +474,12 @@ ul.profile-information li:first-child:after{
     display: block;
 }
 
-
+#sidebar{
+    position: fixed;
+}
+#ajax-tab-container{
+    float: right;
+}
 /*------------------------ 3 Navigation ------------------------*/
 
 header nav{
@@ -589,6 +595,18 @@ header nav .menuout{
     display: none;
 } 
 
+.custom-font2{
+    font-size: 20px!important;
+}
+.custom-font{
+    font-size: 25px!important;
+}
+.tab i{
+    background-color: #425cbb;
+    padding: 12px;
+    border-radius: 50%;
+    color: #fff;
+}
 /*------------------------ 4 Home Section ------------------------*/
 
 #content{
@@ -602,6 +620,8 @@ header nav .menuout{
 section{
     padding-left: 30px !important;
     padding-right: 30px !important;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 section.line{
@@ -656,7 +676,15 @@ section.graybg{
 }
 
 /*------------------------ 5 Resume Section ------------------------*/
-
+.url{
+    font-size: 14px;
+    /* margin-bottom: 5px; */
+    line-height: 29px;
+    color: #425cbb;
+}
+.github-tittle {
+    font-size: 18px;
+}
 ul.timeline{
     margin-left: 10px;
 }
@@ -681,12 +709,12 @@ ul.timeline{
     background: #fff;
     display: block;
     position: absolute;
-    margin-top: -1px;
+    margin-top: 4px;
 }
 
 .timeline li .line-title{
     font-size: 16px;
-    line-height: 6px;
+    line-height: 20px;
 }
 
 .timeline li:first-child{
@@ -1686,7 +1714,9 @@ footer .footer .copyright a:hover{
 }
 
 @media (max-width: 991px) {
-
+    #sidebar{
+        position: relative;
+    }
     .wrapper.top_60{
         margin-top: 30px;
     }
@@ -1773,15 +1803,18 @@ footer .footer .copyright a:hover{
     }
 
     header nav ul{
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
-    header nav ul.tabs li:first-child, header nav .menuout ul.tabs li {
+    /* header nav ul.tabs li:first-child, header nav .menuout ul.tabs li {
         display: block;
     }
 
     header nav ul.tabs li {
         display: none;
-    }
+    } */
 
     header nav .menuout{
         width: 100%;
