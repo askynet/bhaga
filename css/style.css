@@ -677,13 +677,13 @@ section.graybg{
 
 /*------------------------ 5 Resume Section ------------------------*/
 .url{
-    font-size: 14px;
-    /* margin-bottom: 5px; */
-    line-height: 29px;
+    font-size: 13px;
+    margin-left: 5px;
     color: #425cbb;
 }
 .github-tittle {
     font-size: 18px;
+    padding-bottom: 10px;
 }
 ul.timeline{
     margin-left: 10px;
