@@ -473,6 +473,8 @@ ul.profile-information li:first-child:after{
 .profile .site-btn{
     margin: 18px auto 30px;
     display: block;
+    width: fit-content;
+    cursor: pointer;
 }
 
 #sidebar{
